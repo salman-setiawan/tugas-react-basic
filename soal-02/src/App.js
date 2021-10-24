@@ -7,18 +7,18 @@ class App extends Component {
     this.state = {
       movieList: [],
       isLoading: true,
-    };
+    }
   }
 
   componentDidMount() {
-    setTimeout(() => this.fetchMovieList(), 1000);
+    setTimeout(() => this.fetchMovieList(), 1000)
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.movieList.length !== this.state.movieList.length) {
       this.setState({
         isLoading: false
-      });
+      })
     }
   }
 

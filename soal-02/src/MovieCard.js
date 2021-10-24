@@ -4,12 +4,12 @@ import data from "./dummy-data";
 
 
 class MovieCard extends React.Component {
-    movie = {};
+    movie = {}
 
     constructor(props) {
-        super(props);
-        this.movie = props.movie;
-        this.connection = props.lain;
+        super(props)
+        this.movie = props.movie
+        this.connection = props.lain
     }
     
     render() {
